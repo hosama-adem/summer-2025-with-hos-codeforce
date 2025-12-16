@@ -1,0 +1,10 @@
+n=(int(input()))
+for i in range(n):
+    a=list(map(int,input().split()))
+    mi=min(a)
+    li=max(a)
+    for I in a:
+        if I !=mi and I!=li:
+            print(I)
+            break
+            

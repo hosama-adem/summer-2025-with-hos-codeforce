@@ -1,0 +1,11 @@
+#hos
+t=int(input())
+won={}
+for _ in range(t):
+    n=input()
+    if n in won:
+        won[n]+=1
+    else:
+        won[n]=1
+maxu=max(won,key=won.get)    
+print(maxu)        

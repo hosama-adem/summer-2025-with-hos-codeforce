@@ -1,0 +1,21 @@
+#hos
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    found=False
+    l=[]
+    for I in a:
+        for j in a:
+            if I!=j and (I<j and (j%I)%2==0):
+                l.append(I)
+                l.append(j)
+                found=True
+                break
+        if found:
+            break
+    if found:
+        print(*l)
+    else:
+        print(-1)                    
+                
